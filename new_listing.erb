@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="/makersbnb_styles.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <nav>
+    <a>Spaces</a>
+    <a>Requests</a>
+    <a>Sign out</a>
+  </nav>
+
+  <main class='main'>
+  <h1 class='title'>List a space</h1>
+    <form method='POST' action='/new_listing' class='list-form'>
+
+      <div>
+        <label> Name of property</label>
+        <input type='text' name='name' />
+      </div>
+
+  <div>
+  <label>Availability</label>
+  <input type='text' name='availability' />
+  </div>
+
+      <div>
+        <label>Description</label>
+        <textarea name='description'></textarea>
+      </div>
+
+
+      <div>
+        <label> Price per night (£)</label>
+        <input type='text' name='price' value='£'/>
+      </div>
+
+      <div>
+        <input class='login-button' type='submit' value="List My Space" name='List My Space' />
+      </div>
+    </form>
+
+  </main>
+
+</body>
+</html>

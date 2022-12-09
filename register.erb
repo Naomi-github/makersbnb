@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="/makersbnb_styles.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <nav>
+    <a>Spaces</a>
+    <a>Requests</a>
+    <a>Sign out</a>
+  </nav>
+  <nav>
+    <a>About</a>
+    <a>Login</a>
+  </nav>
+  <main class='main'>
+    <h1 class='title'>Feel at home, anywhere</h1>
+    <h2 class='title'>Sign up to MakersBnB</h2>
+    <form action="/posts" method="POST" class='form'>
+    <div>
+      <label for='email'>email address:</label>
+      <input id='email' name='email'></input>
+    </div>
+    <div>
+      <label for='password1'>password:</label>
+      <input id='password1' name='password1'></input>
+    </div>
+    <div>
+      <label for='password2'>confirm password:</label>
+      <input id='password2' name='password2'></input>
+    </div>
+      <input type='submit' value='submit' class='login-button'>
+    </form>
+  </main>
+  </body>
+</html>

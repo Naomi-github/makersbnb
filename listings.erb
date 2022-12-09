@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>MakersBnB</title>
+        <link rel="stylesheet" href="/makersbnb_styles.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    </head>
+
+
+      <body class ="listings">
+      <nav>
+    <a>Spaces</a>
+    <a>Requests</a>
+    <a>Sign out</a>
+  </nav>
+
+  <main class="listings-main"> 
+        <div class="listings-title">
+          <h1>Book a space</h1>
+          <p>Browse through all our listings</p>
+          <p>If you'd like to create a new listing please click on the link below</p>
+          <a href="/new_listing">List a space</a><br>
+          </div>
+          
+        
+
+        <form class="availability-form">
+        <label for="available_from">Available from:</label>
+        <input type="text" id="available_from" name="available_from">
+        <label for="available_to">Available to:</label>
+        <input type="text" id="available_to" name="available_to">
+        </form>
+
+
+      <div class="listing-post">
+      <% @listings.each do |post| %>
+      <div class="post">
+        <%= post.name %><br>
+        <%= post.description %><br>
+        <%= post.availability %><br>
+        <%= post.price %>
+        </div>
+        <br />
+      <% end %>
+      </div>
+</main>
+</html>
